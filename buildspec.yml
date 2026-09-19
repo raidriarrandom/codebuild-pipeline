@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <AWS Account Number>.dkr.ecr.<AWS Region>.amazonaws.com
+      - aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin <AWS Account Number>.dkr.ecr.<AWS Region>.amazonaws.com
       - IMAGE_TAG=latest
   build:
     commands:
