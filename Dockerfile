@@ -8,6 +8,7 @@ WORKDIR /var/task
 COPY lambda_function.py .
 COPY requirements.txt .
 
+
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
